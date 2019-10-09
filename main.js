@@ -6,7 +6,7 @@ const path = require('path');
 async function get_output(command, ...args) {
   let output;
   const opts = {
-    listeners: { stdout: (data: Buffer) => { output += data.toString(); } }
+    listeners: { stdout: (data) => { output += data.toString(); } }
   };
   await exec.exec(command, args, opts);
   return output;
