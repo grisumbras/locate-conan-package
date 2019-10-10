@@ -1,0 +1,12 @@
+{
+  "name": "locate-conan-package",
+  "version": "0.2.0",
+  "description": "Finds the package folder of a Conan package",
+  "main": "main.js",
+  "author": "Dmitry Arkhipov <grisumbras@gmail.com>",
+  "license": "BSL-1.0",
+  "dependencies": {
+    "@actions/core": "^1.1.1",
+    "@actions/exec": "^1.0.1"
+  }
+}

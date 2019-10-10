@@ -1,0 +1,20 @@
+name: locate-conan-package
+author: Dmitry Arkhipov <grisumbras@gmail.com>
+description: Finds the package folder of a Conan package
+branding:
+  icon: map-pin
+  color: blue
+inputs:
+  name:
+    description: Package name
+  version:
+    description: Package description
+  channel:
+    description: Package channel
+  user:
+    description: Package user
+  reference:
+    description: Full package reference
+runs:
+  using: node12
+  main: main.js
